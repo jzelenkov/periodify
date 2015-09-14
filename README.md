@@ -18,18 +18,31 @@ periodify('berlin');
 periodify('brandon');
 // [ 'B', 'Ra', 'Nd', 'O', 'N' ]
 
-periodify('ireland')
+periodify('ireland');
 // [ 'I', 'Re', 'La', 'Nd' ]
 
-periodify('austria')
+periodify('austria');
 // []
 ```
+
+Pass optional parameter to get full info about each chemical element:
+```js
+periodify('france', true);
+// [
+//   { number: 9, weight: 18.9984, name: 'Fluorine', symbol: 'F' },
+//   { number: 88, weight: 226, name: 'Radium', symbol: 'Ra' },
+//   { number: 7, weight: 14.0067, name: 'Nitrogen', symbol: 'N' },
+//   { number: 58, weight: 140.116, name: 'Cerium', symbol: 'Ce' }
+// ]
+```
+
 
 ### Installation
 
 ```sh
 npm install periodify
 ```
+
 
 ### Run Tests
 

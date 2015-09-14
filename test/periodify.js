@@ -114,3 +114,23 @@ describe('periodify', function() {
     });
   });
 });
+
+
+describe('periodify - fullinfo', function() {
+  it('should return full info about chemical element', function() {
+    var gold = { number: 79, weight: 196.9665, name: 'Gold', symbol: 'Au' };
+    expect(periodify('au', true)[0]).to.eql(gold);
+  });
+
+  it('should return full info about multiple chemical elements', function() {
+    var f = { number: 9, weight: 18.9984, name: 'Fluorine', symbol: 'F' };
+    var ra = { number: 88, weight: 226, name: 'Radium', symbol: 'Ra' };
+    var n = { number: 7, weight: 14.0067, name: 'Nitrogen', symbol: 'N' };
+    var ce = { number: 58, weight: 140.116, name: 'Cerium', symbol: 'Ce' };
+
+    expect(periodify('france', true)[0]).to.eql(f);
+    expect(periodify('france', true)[1]).to.eql(ra);
+    expect(periodify('france', true)[2]).to.eql(n);
+    expect(periodify('france', true)[3]).to.eql(ce);
+  });
+});
