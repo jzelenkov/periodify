@@ -1,6 +1,6 @@
 {
   "name": "periodify",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Compose words from chemical element symbols",
   "main": "index.js",
   "repository": {
