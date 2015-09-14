@@ -1,0 +1,26 @@
+{
+  "name": "periodify",
+  "version": "1.0.0",
+  "description": "Compose words from chemical element symbols",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jevzee/periodify.git"
+  },
+  "keywords": [
+    "periodic table",
+    "chemistry",
+    "algorithm"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Jevgeni Zelenkov <jevgeni.zelenkov@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^1.4.1",
+    "expect.js": "^0.3.1",
+    "mocha": "^2.3.2",
+    "rewire": "^2.3.4"
+  }
+}
