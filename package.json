@@ -24,6 +24,6 @@
     "rewire": "^2.3.4"
   },
   "dependencies": {
-    "ptable": "git://github.com/jevzee/ptable.git#patch-1"
+    "ptable": "latest"
   }
 }
