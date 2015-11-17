@@ -1,3 +1,5 @@
+/* global it */
+/* global describe */
 var expect = require('expect.js');
 var rewire = require('rewire');
 var periodify = rewire('../lib/periodify');
@@ -113,8 +115,14 @@ describe('periodify', function() {
       expect(chain).to.eql([]);
     });
   });
-});
 
+  describe('special cases', function() {
+    it('should check LEFT and RIGHT sides of small expressions', function() {
+      chain = periodify('arg');
+      expect(chain).to.eql([]);
+    });
+  });
+});
 
 describe('periodify - fullinfo', function() {
   it('should return full info about chemical element', function() {
