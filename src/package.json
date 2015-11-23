@@ -1,0 +1,6 @@
+{
+  "name": "Periodify",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Periodify.js"
+}
