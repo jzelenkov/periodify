@@ -22,7 +22,10 @@ class PeriodifyDemo extends React.Component {
     return (
       <div className="periodify">
         <h1>PERIODIFY.js</h1>
-        <input type="text" className="periodify-input" placeholder="Type a word to periodify..." onChange={this.onChange} />
+        <input type="text"
+          className="periodify-input"
+          placeholder="Type a word (e.g. Berlin)..."
+          onChange={this.onChange} />
         <p className="periodify-result">{result}</p>
       </div>
     );
