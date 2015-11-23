@@ -1,3 +1,3 @@
-import React from 'react';
+import { render } from 'react-dom';
 import Component from './src';
-React.render(<Component />, document.getElementById('app'));
+render(<Component />, document.getElementById('app'));
