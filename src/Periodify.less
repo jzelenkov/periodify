@@ -1,12 +1,45 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(36,36,36,0.24);
+}
+
 .periodify {
   margin-top: 50px;
   text-align: center;
+
+  h1 {
+    font-family: 'Verdana', sans-serif;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 40px;
+  }
+
   &-input {
+    margin: 0;
     font-size: 2em;
+    width: 400px;
+    color: #F07300;
+    background-color: rgb(220,220,220);
+    border: 2px solid #F07300;
+    border-radius: 7px;
+    text-align: center;
   }
 
   &-result {
     font-size: 2em;
+    font-weight: 700;
+    color: #F07300;
     font-family: 'Verdana', sans-serif;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .periodify {
+    &-input {
+      width: ~"calc(100% - 20px)";
+    }
   }
 }
