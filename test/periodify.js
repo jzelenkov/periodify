@@ -122,6 +122,18 @@ describe('periodify', function() {
       expect(chain).to.eql([]);
     });
   });
+
+  describe('ensure simple lookup', function() {
+    it('should search by symbol only - Tin (Sn)', function() {
+      chain = periodify('tin');
+      expect(chain).to.eql(['Ti', 'N']);
+    });
+
+    it('should search by symbol only - Iron (Fe)', function() {
+      chain = periodify('iron');
+      expect(chain).to.eql(['Ir', 'O',  'N']);
+    });
+  });
 });
 
 describe('periodify - fullinfo', function() {
