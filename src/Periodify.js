@@ -10,23 +10,39 @@ class PeriodifyDemo extends React.Component {
     };
   }
 
+  componentDidMount() {
+    const word = 'Berlin';
+    const result = periodify(word, true);
+    this.setState({result});
+  }
+
   onChange = (evt) => {
-    let word = evt.target.value;
-    let result = periodify(word);
+    const word = evt.target.value;
+    const result = periodify(word, true);
     this.setState({result});
   }.bind(this);
 
   render() {
-    let result = this.state.result.join(', ');
+    const elems = this.state.result.map((elem) => {
+      return <span className="chemical-element">
+        {elem.symbol}
+        <div className="desc" role="top-left">{elem.weight}</div>
+        <div className="desc medium" role="bottom-left-2">{elem.number}</div>
+      </span>;
+    });
 
     return (
       <div className="periodify">
-        <h1>PERIODIFY.js</h1>
+        <h1>Periodify.js</h1>
         <input type="text"
           className="periodify-input"
           placeholder="Type a word (e.g. Berlin)..."
+          defaultValue="Berlin"
           onChange={this.onChange} />
-        <p className="periodify-result">{result}</p>
+
+        <div className="chemical-chain">
+          {elems}
+        </div>
       </div>
     );
   }

@@ -7,9 +7,9 @@
     "chemistry",
     "periodic table"
   ],
-  "repository": "https://github.com/jevzee/periodify",
+  "repository": "https://github.com/jzelenkov/periodify",
   "license": "MIT",
-  "author": "Jevgeni Zelenkov <jevgeni.zelenkov@gmail.com>",
+  "author": "Jay Zelenkov <jzelenkov@me.com>",
   "main": "./src",
   "directories": {
     "bin": "./build",
