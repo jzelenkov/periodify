@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  background-color: rgba(36,36,36,0.24);
+  background-color: #1A1A1A;
 }
 
 .periodify {
@@ -16,27 +16,28 @@ body {
     width: 165px;
     height: 165px;
     position: relative;
-    font: bold 95px Arial;
+    font: bold 95px 'Helvetica Neue', Arial, sans-serif;
     color: #fafffb;
     padding: 25px 25px 25px 30px;
     border: 3px solid #DDFFE2;
     display: inline-block;
     background: linear-gradient(-45deg, rgba(92,190,115,1) 1%,rgba(24,43,4,1) 100%);
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .15);
+    margin: 5px;
   }
 
   .desc {
     position: absolute;
-    font: bold 13px Arial;
+    font: bold 13px Verdana;
     color: rgba(244, 247, 245, .95);
   }
 
   .big {
-    font: bold 20px Arial;
+    font: bold 20px Verdana;
   }
 
   .medium {
-    font: bold 17px Arial;
+    font: bold 17px Verdana;
   }
 
   div[role="top-left"] {
@@ -73,19 +74,13 @@ body {
     margin: 20px auto;
     font-size: 2em;
     width: 400px;
-    color: #F07300;
-    background-color: rgb(220,220,220);
-    border: 2px solid #F07300;
-    border-radius: 7px;
+    color: #f5f5f5;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none !important;
+    border-radius: 0;
     text-align: center;
   }
 
-  &-result {
-    font-size: 2em;
-    font-weight: 700;
-    color: #F07300;
-    font-family: 'Verdana', sans-serif;
-  }
 }
 
 @media screen and (max-width: 420px) {
