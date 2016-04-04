@@ -11,7 +11,7 @@ class PeriodifyDemo extends React.Component {
   }
 
   componentDidMount() {
-    const word = 'Berlin';
+    const word = 'broccoli';
     const result = periodify(word, true);
     this.setState({result});
   }
@@ -36,8 +36,8 @@ class PeriodifyDemo extends React.Component {
         <h1>Periodify.js</h1>
         <input type="text"
           className="periodify-input"
-          placeholder="Type a word (e.g. Berlin)..."
-          defaultValue="Berlin"
+          placeholder="Type a word ..."
+          defaultValue="broccoli"
           onChange={this.onChange} />
 
         <div className="chemical-chain">
